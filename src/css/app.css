@@ -1,0 +1,120 @@
+@import url(../css/reset.css);
+#wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #3f5864;
+}
+#wrap .wrap-container {
+  margin: 0 auto;
+}
+#wrap .wrap-container .timer-content .title {
+  width: 100%;
+}
+#wrap .wrap-container .timer-content .title h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #fff;
+}
+#wrap .wrap-container .timer-content .title .help-img-box {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+#wrap .wrap-container .timer-content .title .help-img-box img {
+  width: 100%;
+}
+#wrap .wrap-container .timer-content .timer-box {
+  width: 100%;
+}
+#wrap .wrap-container .timer-content .timer-box .timer {
+  display: flex;
+  justify-content: center;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label {
+  position: relative;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label input {
+  width: 155px;
+  font-size: 80px;
+  border: none;
+  text-align: center;
+  background-color: #3f5864;
+  caret-color: #fff;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label input::-webkit-outer-spin-button, #wrap .wrap-container .timer-content .timer-box .timer .time-box label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label input:disabled {
+  color: #000;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label input:focus {
+  outline: none;
+}
+#wrap .wrap-container .timer-content .timer-box .timer .time-box label span {
+  position: absolute;
+  bottom: -10px;
+  left: 90%;
+  font-size: 50px;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption button.start {
+  background: #72ff65;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption button.stop {
+  background: #f35a5a;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption button.reset {
+  background: #151515;
+}
+#wrap .wrap-container .timer-content .timer-box .timer-opption button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+#wrap .wrap-container .modal {
+  margin-top: 60px;
+}
+#wrap .wrap-container .modal .modal-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#wrap .wrap-container .modal .modal-content p {
+  font-size: 24px;
+  color: #fff;
+}
+#wrap .wrap-container .modal .modal-content button {
+  width: 135px;
+  border: none;
+  background: #151515;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+#wrap .wrap-container .modal .modal-content button span {
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+#wrap .wrap-container .modal .modal-content button:hover {
+  background-color: #5a678c;
+  transition: all 0.3s;
+}

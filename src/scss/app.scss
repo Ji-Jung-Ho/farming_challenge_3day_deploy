@@ -1,0 +1,126 @@
+@import url(../css/reset.css);
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #3f5864;
+  .wrap-container {
+    margin: 0 auto;
+    .timer-content {
+      .title {
+        width: 100%;
+        h2 {
+          font-size: 50px;
+          text-align: center;
+          padding-bottom: 50px;
+          color: #fff;
+        }
+        .help-img-box {
+          display: none;
+          width: 30px;
+          height: 30px;
+          position: relative;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .timer-box {
+        width: 100%;
+        .timer {
+          display: flex;
+          justify-content: center;
+          .time-box {
+            label {
+              position: relative;
+              input {
+                width: 155px;
+                font-size: 80px;
+                border: none;
+                text-align: center;
+                background-color: #3f5864;
+                caret-color: #fff;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+                &:disabled {
+                  color: #000;
+                }
+                &:focus {
+                  outline: none;
+                }
+              }
+              span {
+                position: absolute;
+                bottom: -10px;
+                left: 90%;
+                font-size: 50px;
+              }
+            }
+          }
+        }
+        .timer-opption {
+          display: flex;
+          justify-content: space-between;
+          button {
+            border: none;
+            background: none;
+            font-size: 20px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            &.start {
+              background: #72ff65;
+            }
+            &.stop {
+              background: #f35a5a;
+            }
+            &.reset {
+              background: #151515;
+            }
+            &:hover {
+              transform: scale(1.1);
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+    .modal {
+      margin-top: 60px;
+      .modal-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p {
+          font-size: 24px;
+          color: #fff;
+        }
+        button {
+          width: 135px;
+          border: none;
+          background: #151515;
+          border-radius: 50px;
+          padding: 10px;
+          cursor: pointer;
+          span {
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          &:hover {
+            background-color: #5a678c;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
